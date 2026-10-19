@@ -1,19 +1,20 @@
 import { games } from "./data/games.js";
 import Header from "./components/Header.jsx";
-import GameCard from "./components/GameCard.jsx";
+import GameList from "./components/GameList.jsx";
+import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header />
-      <div style={{ width: "200px" }}>
-        <GameCard
-          game={games[0]}
-          isFavorite={false}
-          onSelect={(gameId) => console.log("Abrir detalle de", gameId)}
+      <main>
+        <GameList
+          games={games}
+          favoriteIds={[]}
+          onSelectGame={(gameId) => console.log("Abrir detalle de", gameId)}
           onToggleFavorite={(gameId) => console.log("Favorito", gameId)}
         />
-      </div>
+      </main>
     </div>
   );
 }

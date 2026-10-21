@@ -1,0 +1,29 @@
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.genres__chip {
+    padding: 8px 14px;
+    border: 2px solid var(--paper-dark);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--paper);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, transform 0.15s;
+}   
+
+.genres__chip:hover {
+    background: var(--wall-light);
+}
+
+/* Botón activo: se ve como una etiqueta de precio pegada */
+.genres__chip[aria-pressed="true"] {
+    background: var(--sticker);
+    border-color: var(--sticker);
+    color: var(--ink);
+    transform: rotate(-2deg);
+}

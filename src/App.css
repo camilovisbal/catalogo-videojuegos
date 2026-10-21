@@ -3,3 +3,14 @@
     margin: 0 auto;
     padding: 0 16px 64px;
 }
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 16px 24px;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    border-top: 1px solid var(--wall-light);
+    border-bottom: 1px solid var(--wall-light);
+}

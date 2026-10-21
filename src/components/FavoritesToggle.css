@@ -1,0 +1,32 @@
+.fav-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    padding: 8px 8px 8px 14px;
+    border: 2px solid var(--paper);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--paper);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.fav-toggle:hover {
+    background: var(--wall-light);
+}
+
+.fav-toggle[aria-pressed="true"] {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+.fav-toggle__count {
+    padding: 2px 8px;
+    border-radius: 3px;
+    background: var(--sticker);
+    color: var(--ink);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+}

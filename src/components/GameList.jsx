@@ -8,6 +8,7 @@ function GameList({ games, favoriteIds, onSelectGame, onToggleFavorite, onClearF
                 <p className="empty__title">Este estante está vacío</p>
                 <p>Ningún juego coincide con la búsqueda o los filtros actuales.</p>
                 <button type="button" className="empty__button" onClick={onClearFilters}>
+                    Limpiar filtros
                 </button>
             </div>
         );
